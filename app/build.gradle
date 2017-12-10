@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: '../android_commons.gradle'
+apply from: '../android_dependencies.gradle'
+
+android {
+    
+    defaultConfig {
+        applicationId "cbr.com.opengallery"
+        
+        versionCode 1
+        versionName "1.0"
+
+    }
+    
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        
+        release{
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    def uiDependencies = rootProject.ext.uiDependencies
+    def domainDependencies = rootProject.ext.domainDependencies
+    
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation domainDependencies.kotlinLib
+    implementation domainDependencies.rxKotlin
+    implementation uiDependencies.appCompat
+    implementation uiDependencies.designCompat
+    implementation uiDependencies.cardView
+    implementation uiDependencies.glide
+}

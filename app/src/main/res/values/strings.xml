@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">O-Gallery</string>
+    <string
+        name="permission_rational_read_external">Storage read permission is needed to pick files.</string>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+    <string name="title_permission_needed">Permission needed</string>
+</resources>

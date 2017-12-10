@@ -1,0 +1,19 @@
+<resources>
+    
+    <!-- Base application theme. -->
+    <style name="OGTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <style name="OGTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+    
+    <style name="OGTheme.Overlay.Appbar" parent="ThemeOverlay.AppCompat.Light"/>
+    
+    <style name="OGTheme.Overlay.PopUpMenu" parent="ThemeOverlay.AppCompat.Dark"/>
+
+</resources>

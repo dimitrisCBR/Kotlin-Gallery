@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_image_height">180dp</dimen>
+    <dimen name="gallery_image_overlay_height_normal">64dp</dimen>
+    <dimen name="gallery_image_overlay_height_small">32dp</dimen>
+    
+    <!-- Standard Paddings -->
+    <dimen name="xxsmall">6dp</dimen>
+    <dimen name="xsmall">8dp</dimen>
+    <dimen name="small">16dp</dimen>
+    <dimen name="medium">24dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="xlarge">48dp</dimen>
+    <dimen name="xxlarge">56dp</dimen>
+    <dimen name="xxxlarge">64dp</dimen>
+</resources>
