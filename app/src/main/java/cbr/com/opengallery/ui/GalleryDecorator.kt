@@ -1,9 +1,10 @@
-package cbr.com.opengallery
+package cbr.com.opengallery.ui
 
 import android.content.Context
 import android.graphics.Rect
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import cbr.com.opengallery.R
 
 /** Created by Dimitrios on 12/10/2017.*/
 class GalleryDecorator(context: Context) : RecyclerView.ItemDecoration() {

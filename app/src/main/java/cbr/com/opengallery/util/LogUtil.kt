@@ -1,6 +1,7 @@
-package cbr.com.opengallery
+package cbr.com.opengallery.util
 
 import android.util.Log
+import cbr.com.opengallery.BuildConfig
 
 /** Created by Dimitrios on 12/10/2017.*/
 fun log(tag: String, throwable: Throwable) {

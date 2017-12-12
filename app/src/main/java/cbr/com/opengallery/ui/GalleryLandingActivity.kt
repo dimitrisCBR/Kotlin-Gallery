@@ -1,17 +1,20 @@
-package cbr.com.opengallery
+package cbr.com.opengallery.ui
 
 import android.Manifest
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import cbr.com.opengallery.R
+import cbr.com.opengallery.util.getAllImages
+import cbr.com.opengallery.util.sortImagesByFolder
 import io.reactivex.Observable
 import kotlinx.android.synthetic.main.include_toolbar.*
 import kotlinx.android.synthetic.main.recyclerview.*
 import java.io.File
 
 /** Created by Dimitrios on 12/7/2017.*/
-class OpenGalleryNavigationActivity : PermissionActivity(), AdapterSelectionListener {
+class GalleryLandingActivity : BaseActivity(), FileSelectionListener {
     
-    private val mAdapter = OpenGalleryAdapter(this@OpenGalleryNavigationActivity)
+    private val mAdapter = FolderAdapter(this@GalleryLandingActivity)
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,10 +47,6 @@ class OpenGalleryNavigationActivity : PermissionActivity(), AdapterSelectionList
         }
     }
     
-    override fun onItemSelected(file: File) {
-    
-    }
-    
     private fun fetchAllMediaFiles() {
         Observable.just(sortImagesByFolder(getAllImages(this)))
                 .doOnSubscribe({ disposable -> compositeDisposable.add(disposable) })
@@ -56,4 +55,7 @@ class OpenGalleryNavigationActivity : PermissionActivity(), AdapterSelectionList
                         { throwable: Throwable? -> handleError(throwable) }
                 )
     }
+    
+    
+    override fun onFileSelected(file: File) = startActivity(GalleryBrowseFolderActivity.newIntent(this@GalleryLandingActivity, file))
 }

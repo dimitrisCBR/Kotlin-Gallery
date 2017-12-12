@@ -1,6 +1,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="cbr.com.opengallery">
+    
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -14,7 +15,7 @@
         android:theme="@style/OGTheme">
         
         <activity
-            android:name=".OpenGalleryNavigationActivity"
+            android:name=".ui.GalleryLandingActivity"
             android:theme="@style/OGTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -29,6 +30,10 @@
                 <data android:mimeType="image/*"/>
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".ui.GalleryBrowseFolderActivity"
+            android:theme="@style/OGTheme.NoActionBar"/>
     
     </application>
 

@@ -4,6 +4,8 @@
     <dimen name="gallery_image_overlay_height_normal">64dp</dimen>
     <dimen name="gallery_image_overlay_height_small">32dp</dimen>
     
+    <dimen name="gallery_image_file_size">80dp</dimen>
+    
     <!-- Standard Paddings -->
     <dimen name="xxsmall">6dp</dimen>
     <dimen name="xsmall">8dp</dimen>

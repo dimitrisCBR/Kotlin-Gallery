@@ -1,6 +1,7 @@
-package cbr.com.opengallery
+package cbr.com.opengallery.util
 
 import android.widget.ImageView
+import cbr.com.opengallery.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import java.io.File
