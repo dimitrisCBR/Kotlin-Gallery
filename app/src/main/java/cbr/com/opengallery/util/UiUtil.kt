@@ -4,7 +4,6 @@ import android.content.Context
 import android.util.DisplayMetrics
 import android.view.WindowManager
 
-/** Created by Dimitrios on 12/11/2017.*/
 fun getScreenHeight(context: Context): Int = getDisplayMetrics(context).heightPixels
 
 fun getScreenWidth(context: Context): Int = getDisplayMetrics(context).widthPixels

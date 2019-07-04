@@ -9,7 +9,6 @@ import cbr.com.opengallery.util.loadImage
 import kotlinx.android.synthetic.main.viewholder_folder.view.*
 import java.io.File
 
-/** Created by Dimitrios on 12/10/2017.*/
 class FolderAdapter(private val listener: FileSelectionListener) : RecyclerView.Adapter<FolderAdapter.FolderViewHolder>() {
     
     private var items = mapOf<File, List<File>>()

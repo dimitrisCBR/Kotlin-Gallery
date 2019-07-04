@@ -40,7 +40,8 @@ dependencies {
     
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation domainDependencies.kotlinLib
-    implementation domainDependencies.rxKotlin
+    implementation domainDependencies.rxAndroid
+    implementation domainDependencies.rxJava
     implementation uiDependencies.appCompat
     implementation uiDependencies.designCompat
     implementation uiDependencies.cardView
