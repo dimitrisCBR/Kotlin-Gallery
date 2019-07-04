@@ -6,7 +6,10 @@ Example use of `ContentResolver` queries to fetch all media from external storag
 
 ### Screenshots
 
+##### Landing
+![Landing](image/landing.png "Landing")
 
-![Landing](landing.png "Landing")
 
-![Browse Folder](browse_folder.png "Browse Folder")
+
+##### Browse Folder
+![Browse Folder](image/browse_folder.png "Browse Folder")
