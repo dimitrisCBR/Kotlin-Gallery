@@ -7,9 +7,10 @@ Example use of `ContentResolver` queries to fetch all media from external storag
 ### Screenshots
 
 ##### Landing
-![Landing](image/landing.png "Landing")
 
+<img src="https://github.com/dimitrisCBR/Kotlin-Gallery/blob/master/image/landing.png" width="300" height="600">
 
 
 ##### Browse Folder
-![Browse Folder](image/browse_folder.png "Browse Folder")
+
+<img src="https://github.com/dimitrisCBR/Kotlin-Gallery/blob/master/image/browse_folder.png" width="300" height="600">
